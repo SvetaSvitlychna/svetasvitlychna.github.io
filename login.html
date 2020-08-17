@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/Styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <link rel="stylesheet" href="CSS/forms.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!--header-->
+                <a href="index.html" class="navbar-brand"><span
+                        class="font-weight-bold text-uppercase">Happy<img src="images/bike-logo.png" class="logo">
+                        wheels</span></a>
+                <!-- navigation-->
+                <div class="container">
+                    <ul class="navbar-nav float-left">
+                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-home"></i>Home</a></li>
+                        <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-book-open"></i>About us</a></li>
+                        <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-blog"></i>Catalog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-address-card"></i>Contact us</a></li>
+                    </ul>
+                    <ul class="navbar-nav float-right">
+                        <li class="nav-item"><a href="cart.html"><i
+                                    class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="overlay-trend">
+    <div class="container">  
+        <div class="row">
+<form method="POST action="">
+    <h2 >Sign in</h2>
+    <input type="email" required name="email" class="mb-4" placeholder="Enter email">
+    <input type="password" required name="password" placeholder="Enter password">
+    
+   <div class="d-flex justify-content-around"> <!--<label><input type="checkbox">Remember me</label>-->
+    <input type="checkbox" id="rem">
+    <label for="rem">Remember me</label>
+
+    <!--<input type="submit" required> это сложнее, лучше с кнопкой, пример ниже-->
+    <button type="submit" class="btn btn-dark btn-block my=3">Login</button>
+    <a href="forgot.html">Forget password?</a>
+<a href="register.html">Sign up</a>
+   </div>
+</form>
+
+        </div>
+    </div> 
+    </div>  
+<footer class="bg-dark text-white">
+    <div class="col-4 float-left">
+        <h6 class="text-dark text-muted">Social media</h6>
+        <ul class="navbar-footer">
+            <li><a class="footer-link" href="https://twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a class="footer-link" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a class="footer-link" href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a class="footer-link" href="https://www.google.com/" target="_blank"><i
+                        class="fab fa-google-plus"></i> Google</a></li>
+        </ul>
+    </div>
+    <div class="col-4 float-left">
+        <h6 class="text-dark text-muted">Customer service</h6>
+        <ul class="navbar-footer">
+        <li><a class="footer-link" href="#">Help </a></li>
+        <li><a class="footer-link" href="#">FAQs</a></li>
+        <li><a class="footer-link" href="#">Returns</a></li>
+        <li><a class="footer-link" href="#">Refund</a></li>
+        <li><a class="footer-link" href="#">Delivery</a></li>
+    </ul>
+    </div>
+    <div class="col-4 float-right">
+        <h6 class="text-dark text-muted">Our school</h6>
+        <ul class="navbar-footer">
+        <li><a class="footer-link" href="#">Teachers</a></li>
+    </ul>
+    </div>
+<div class="col-6 float-left">
+    <p class="small">&copy; 2020 All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>

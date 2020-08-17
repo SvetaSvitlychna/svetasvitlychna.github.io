@@ -1,0 +1,12 @@
+.form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em+0.75rem +2px);
+    padding: 0.375rem 0.75rem;
+}
+.form-control-focus{
+    color: pink;
+    background-color: rgb(187, 184, 184);
+    border-color: seagreen;
+    outline:0;
+}

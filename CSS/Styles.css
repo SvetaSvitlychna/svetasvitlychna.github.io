@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400;1,500&display=swap');
-
 body{line-height: 2,0;
   background-color: rgb(228, 222, 222);
-  
+
 }
 .header{
   background-color: rgb(243, 165, 76);
 display: inline-block;
-padding-right: 0rem;
-}
-/*.container{
-}*/
-/*.navbar{
 
+}
+.container{display: inline-block;
+}
+/*.navbar{
 }*/
 .navbar-brand {font-family: 'Roboto', sans-serif;
   font-size: 4em;
@@ -21,7 +19,7 @@ padding-right: 0rem;
   display: inline-block;
   text-align: center;
 }
-  
+
 .navbar-nav {
 list-style: none;
     padding-left: 0;
@@ -33,7 +31,6 @@ list-style: none;
     padding: 14px 16px;
     text-decoration:none;} 
 /*.nav-link{
-
 }*/
 .fas{
 color:black;
@@ -47,13 +44,10 @@ font-style: italic;
 display: flex;
 background-color: rgb(241, 237, 237);}
 /*.product{
-
 }*/
 /*.recommandation{
-
 }*/
 /*.new-product{
-
 }*/
 /*.list-inline{
   
@@ -61,13 +55,12 @@ background-color: rgb(241, 237, 237);}
 .bg-dark{
   background-color: #cf740c;
 }
-.text-white{
- color: cadetblue;
-}
+/*.text-white{
+
+}*/
 .text-dark{
   color: white;
   font-size: medium;
-  padding: 1em;
   margin: 0em;
 
 }
@@ -112,9 +105,4 @@ color: rgb(14, 13, 13);
     color: rgb(231, 16, 52);
       background-color: #f3f040;
       border-color: #353433;}
-
-/*float:right;}
-/*.fab*/
-/*.small */
-/*.text-muted/* 
-/*.mb-0*/
+ 
