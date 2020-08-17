@@ -1,11 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+    <link href="CSS/Styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/grid.css">
+    <title>Home</title>
+
 </head>
 <body>
-    <h1>Hello my site</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!--header-->
+                <a href="index.html" class="navbar-brand"><span
+                        class="font-weight-bold text-uppercase">Happy<img src="images/bike-logo.png" class="logo">
+                        wheels</span></a>
+                <!-- navigation-->
+                <div class="container">
+                    <ul class="navbar-nav float-left">
+                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-home"></i>Home</a></li>
+                        <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-book-open"></i>About us</a></li>
+                        <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-blog"></i>Catalog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link" target="_blank"><i
+                                    class="fas fa-address-card"></i>Contact us</a></li>
+                    </ul>
+                    <ul class="navbar-nav float-right">
+                        <li class="nav-item"><a href="cart.html"><i
+                                    class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
+                        <li class="nav-item"><i class="fas fa-sign-in-alt"></i>Login</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <section>
+        <header class="popular">
+            <h2>TOP 4 </h2>
+        </header>
+        <div class="row">
+            <div class="col-3">
+                <div class="product top">
+                  <a href="detail.tml"><img src="images/top1.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="product">
+                    <a href="detail.html"><img src="images/top2.jpg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="product">
+                    <a href="detail.html"><img src="images/top3.jpg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="product">
+                    <a href="detail.html"><img src="images/top4.jpg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="product">
+                    <a href="detail.htl"><img src="images/top7.jpg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="cf"></div>
+    <!-- overlay -->
+    <div class="overlay-trend">
+        <h2>You can't ride a bike</h2>
+        <p>You can do it with our school! </p>
+        <a href="#" class="btn btn-dark">Sign in to our school &raquo;</a>
+    </div>
+    <section>
+        <header class="recommondation">
+            <h3>Our recommondation</h3>
+        </header>
+        <div class="row">
+            <div class="col-4">
+                <div class="new_product">
+                    <a href="detail.html">
+                        <img src="images/bike-logo.png" alt="description"></a>
+                    <div>
+                        <ul>
+                            <li><a href="#">like</a></li>
+                            <li><a href="#">add to cart</a></li>
+                            <li><a href="#">detail</a></li>
+                        </ul>
+                    </div>
+                    <h3>Product title</h3>
+                    <p>123</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="new_product">
+                    <a href="detail.html">
+                        <img src="images/bike_4.jpg" alt="description"></a>
+                    <div class="list-inline">
+                        <ul>
+                            <li><a href="#">like</a></li>
+                            <li><a href="#">add to cart</a></li>
+                            <li><a href="#">detail</a></li>
+                        </ul>
+                    </div>
+                    <h3>Product title</h3>
+                    <p>123</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="new_product">
+                    <a href="detail.html">
+                        <img src="images/bike_4.jpg" alt="description"></a>
+                    <div>
+                    </div>
+                        <ul>
+                            <li><a href="#">like</a></li>
+                            <li><a href="#">add to cart</a></li>
+                            <li><a href="#">detail</a></li>
+                        </ul>
+
+                    <h3>Product title</h3>
+                    <p>123</p>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="new_product">
+                    <a href="detail.html">
+                        <img src="images/bike-logo.png" alt="description"></a>
+                    <div>
+                        <ul>
+                            <li><a href="#">like</a></li>
+                            <li><a href="#">add to cart</a></li>
+                            <li><a href="#">detail</a></li>
+                        </ul>
+                    </div>
+                    <h3>Product title</h3>
+                    <p>123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+
+        <footer class="bg-dark text-white">
+            <div class="col-4 float-left">
+                <h6 class="text-dark text-muted">Social media</h6>
+                <ul class="navbar-footer">
+                    <li><a class="footer-link" href="https://twitter.com/" target="_blank"><i
+                                class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a class="footer-link" href="https://www.facebook.com/" target="_blank"><i
+                                class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a class="footer-link" href="https://www.instagram.com/" target="_blank"><i
+                                class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a class="footer-link" href="https://www.google.com/" target="_blank"><i
+                                class="fab fa-google-plus"></i> Google</a></li>
+                </ul>
+            </div>
+            <div class="col-4 float-left">
+                <h6 class="text-dark text-muted">Customer service</h6>
+                <ul class="navbar-footer">
+                <li><a class="footer-link" href="#">Help </a></li>
+                <li><a class="footer-link" href="#">FAQs</a></li>
+                <li><a class="footer-link" href="#">Returns</a></li>
+                <li><a class="footer-link" href="#">Refund</a></li>
+                <li><a class="footer-link" href="#">Delivery</a></li>
+            </ul>
+            </div>
+            <div class="col-4 float-right">
+                <h6 class="text-dark text-muted">Our school</h6>
+                <ul class="navbar-footer">
+                <li><a class="footer-link" href="#">Teachers</a></li>
+            </ul>
+            </div>
+        <div class="col-6 float-left">
+            <p class="small">&copy; 2020 All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
