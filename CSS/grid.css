@@ -4,7 +4,8 @@
 .col-2{
     width: calc(2*100%/12);
 }
-.col-3{width: calc(3*100%/12);}
+.col-3{width: calc(3*100%/12);
+flex: 0 0 20%;}
 .col-4{width: calc(4*100%/12);
     }
 .col-5{width: calc(5*100%/12);}
@@ -26,5 +27,13 @@
 .nav-item{
         padding: 14px 16px;} 
 .fas{ margin-right:10px;} 
-/*.float-left{float: left;}
+.row{display: flex;
+flex-wrap: wrap;}
+.float-left{float: left;}
 .float-right{float:right;}
+.mb-3{
+    margin-bottom: 1rem 
+}
+.mr-auto {
+    margin-right: auto 
+}
