@@ -53,6 +53,7 @@ margin-right:10px;}
 text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-style: italic;
+margin-top:-20px;
 }
 .row{
 background-color: rgb(241, 237, 237);}
@@ -62,15 +63,18 @@ background-color: rgb(241, 237, 237);}
 .backgr{
 background-color: rgb(241, 237, 237);
 display: block;
+padding:1em;
 }
 
 .recommendation{ display: block;
   text-align: center;
   font-style: oblique;
+  margin-top: -20px;
 }
 .interest{
  background-color: rgb(241, 237, 237);
   display: block;
+  padding:1em;
 }
 
 /*.list-inline{
@@ -78,6 +82,7 @@ display: block;
 }*/
 .bg-dark{
   background-color: #cf740c;
+  padding:1em;
   
 }
 /*.text-white{
@@ -104,6 +109,10 @@ text-decoration: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.text-overlay{
+  display: block;
+  position: absolute;
 }
 .btn{  
     text-align: center;
@@ -146,3 +155,66 @@ padding: 1em;
   color: rgb(128, 126, 126);
   text-decoration: none;
 }
+.text-center{
+  text-align: center;
+}
+.overlay-form{
+  color: rgb(31, 30, 30);
+  text-align: center;
+  font-size: 1em;
+  padding: 6em 0;
+  background-color: #eee;
+  background-image: url("../images/backgr4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+.row-form{
+  background-color: transparent
+}
+.container-form{
+    display: inline-block;
+    min-width: 992px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   .btn-form{text-align: center;
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+    border-color: gray;    
+    border-radius: 0.25rem;
+    text-decoration: none;
+    margin:1em;
+}
+.overlay-cart {color: rgb(31, 30, 30);
+text-align: center;
+font-size: 1em;
+padding: 100%;
+background-color: #eee;
+background-image: url("../images/backgr4.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}
+
+.row-form input{
+  display:  flexbox; 
+  padding:0.5em;
+  padding-left: 5em;
+margin: 1em;}
+.psw:hover{
+  padding-left: 0.6rem;
+  color: rgb(59, 59, 59);
+  text-decoration: none;}
+  .signup:hover{
+    padding-left: 0.6rem;
+    color: rgb(59, 59, 59);
+    text-decoration: none;}
+    .add-inform a{
+      text-decoration: none;
+          }

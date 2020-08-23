@@ -37,6 +37,9 @@ flex-wrap: wrap;}
 .mr-auto {
     margin-right: auto 
 }
+.p-5 {
+  padding: 3rem;
+}
 /*@media(min-width:576px){
   .col-md-3{max-width: 540px;}
 
