@@ -44,13 +44,16 @@ list-style: none;
     font-size: 18px;
   } 
 .nav-link{
-  display: inline;
+  display: inline-block;
   text-decoration: none;
-
+  
+  transform: all 0.5s ease-in;
 }
 .fas{
 color:black;
-margin-right:10px;} 
+margin-right:10px;}
+
+
 .popular{
 text-align: center;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -140,11 +143,14 @@ padding:1em;
 text-decoration: none;}
 .p-list{display: flex;
 list-style: none;
-padding: 1em;
+padding: 0em;
+justify-content: space-around;
+padding-left: unset;
+margin: auto
 }
 
 .nav-link:hover{
-  padding-left: 0.6rem;
+  padding-right: 0.6rem;
   color: rgb(128, 126, 126);
   text-decoration: none;
 }
