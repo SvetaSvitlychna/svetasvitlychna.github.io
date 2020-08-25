@@ -10,3 +10,55 @@
     border-color: seagreen;
     outline:0;
 }
+.rows{
+    margin:1em;
+    width: 789px;
+    height:10em;
+    text-align: center;
+}
+.overlay-form{
+    color: rgb(31, 30, 30);
+    text-align: center;
+    font-size: 1em;
+    padding: 6em 0;
+    background-color: #eee;
+    background-image: url("../images/backgr4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+  .row-form{
+    background-color: transparent
+  }
+  .container-form{
+      display: inline-block;
+      min-width: 992px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-left: auto;
+      margin-right: auto;
+     }
+     .btn-form{text-align: center;
+      font-family: inherit;
+      font-size: 1em;
+      line-height: 1.5;
+      display: inline-block;
+      vertical-align: middle;
+      border-color: gray;    
+      border-radius: 0.25rem;
+      text-decoration: none;
+        margin:1em;}
+.row-form input{
+display:  flexbox; 
+padding:0.5em;
+            padding-left: 5em;
+          margin: 1em;}
+          .psw:hover{
+            padding-left: 0.6rem;
+            color: rgb(59, 59, 59);
+            text-decoration: none;}
+          .signup:hover{
+            padding-left: 0.6rem;
+            color: rgb(59, 59, 59);
+            text-decoration: none;}

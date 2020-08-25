@@ -41,10 +41,12 @@ list-style: none;
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
+    font-size: 18px;
   } 
 .nav-link{
   display: inline;
   text-decoration: none;
+
 }
 .fas{
 color:black;
@@ -83,6 +85,7 @@ padding:1em;
 .bg-dark{
   background-color: #cf740c;
   padding:1em;
+  font-size: 18px;
   
 }
 /*.text-white{
@@ -90,15 +93,11 @@ padding:1em;
 }*/
 .text-dark{
   color: white;
-  font-size: medium;
+  font-size: 18px;
   margin: 0em;
 
 }
-.footer-link
-{display: inline-block;
-color: rgb(14, 13, 13);
-text-decoration: none;
-}
+
 .overlay-trend {
   color: rgb(240, 33, 50);
   text-align: center;
@@ -112,7 +111,7 @@ text-decoration: none;
 }
 .text-overlay{
   display: block;
-  position: absolute;
+  
 }
 .btn{  
     text-align: center;
@@ -136,20 +135,14 @@ text-decoration: none;
     color: rgb(231, 16, 52);
       background-color: #f3f040;
       border-color: #353433;}
- .navbar-footer{ 
-  list-style: none;
- }
+
  .list-unstyle{list-style: none;
 text-decoration: none;}
 .p-list{display: flex;
 list-style: none;
 padding: 1em;
 }
-.footer-link:hover{
-  padding-left: 0.6rem;
-  color: rgb(128, 126, 126);
-  text-decoration: none;
-}
+
 .nav-link:hover{
   padding-left: 0.6rem;
   color: rgb(128, 126, 126);
@@ -158,63 +151,16 @@ padding: 1em;
 .text-center{
   text-align: center;
 }
-.overlay-form{
-  color: rgb(31, 30, 30);
-  text-align: center;
-  font-size: 1em;
-  padding: 6em 0;
-  background-color: #eee;
-  background-image: url("../images/backgr4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
-}
-.row-form{
-  background-color: transparent
-}
-.container-form{
-    display: inline-block;
-    min-width: 992px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-   }
-   .btn-form{text-align: center;
-    font-family: inherit;
-    font-size: 1em;
-    line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-    border-color: gray;    
-    border-radius: 0.25rem;
-    text-decoration: none;
-    margin:1em;
-}
 .overlay-cart {color: rgb(31, 30, 30);
 text-align: center;
 font-size: 1em;
-padding: 100%;
+padding: 20%;
 background-color: #eee;
 background-image: url("../images/backgr4.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;}
-
-.row-form input{
-  display:  flexbox; 
-  padding:0.5em;
-  padding-left: 5em;
-margin: 1em;}
-.psw:hover{
-  padding-left: 0.6rem;
-  color: rgb(59, 59, 59);
-  text-decoration: none;}
-  .signup:hover{
-    padding-left: 0.6rem;
-    color: rgb(59, 59, 59);
-    text-decoration: none;}
-    .add-inform a{
-      text-decoration: none;
-          }
+.add-inform a{
+  text-decoration: none;
+   }
