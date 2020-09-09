@@ -45,8 +45,6 @@
 .product-overlay {
     width: 100%;
     position: inherit;
-    /*left: 0;
-    bottom: 0;*/
     display: inline-flex;
     align-items: flex-end;
     justify-content: center;
@@ -89,14 +87,6 @@
     z-index: 999;
 }
 
-/*.bg-cover {
-    background-size: cover !important;
-}
-  
-.bg-center {
-    background-position: center center !important;
-}
-  */
 .reset-anchor {
     color: inherit;
     transition: all 0.3s;

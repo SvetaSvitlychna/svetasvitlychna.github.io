@@ -306,22 +306,7 @@ body{
 .mx-auto {
   margin-left: auto !important;
 }
-/*
-@media (min-width: 768px) {
-  .mb-md-0,
-  .my-md-0 {
-      margin-bottom: 0 !important;
-  }
-}
 
-@media (min-width: 992px) {
-  .px-lg-5 {
-      padding-right: 3rem !important;
-  }
-}
-
-
-/* order */
 
 .order-1 {
   order: 1;
@@ -372,7 +357,6 @@ body{
 }
 
 
-/* align */
 
 .justify-content-start {
   justify-content: flex-start !important;
