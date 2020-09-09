@@ -73,35 +73,6 @@ border-color: #ff0084;}
             left:40%;
             transition:all 0.3s ease;
         }
-.effect-ease li a:before{
-            content:'';
-            width:0%;
-            left:40%;
-            transition:all 0.3s ease;
-            
-        }
-.effect-ease li a:hover:after{
-            content:'';
-            height:3px;
-            width:40%;
-            background:gray;
-            position: absolute;
-            bottom:0px;
-            left:10%;
-    }
-        
-.effect-ease li a:hover:before{
-    content:'';
-    height:3px;
-    width:40%;
-    background:gray;
-    position: absolute;
-    bottom:0px;
-    left:0%;
-        }
-        .float-right{
-            position: relative;
-        }
 .effect-brackets a:before,
 .effect-brackets a:after{
     display:inline-block;
@@ -127,3 +98,4 @@ border-color: #ff0084;}
     transform:translateX(0px);
     transition:transform 0.3s,opacity 0.2s;
 }
+

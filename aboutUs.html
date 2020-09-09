@@ -2,12 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
     <link href="CSS/Styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/forms.css">
     <link rel="stylesheet" href="CSS/effects.css">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
     <title>About us</title>
 </head>
 <body>
@@ -15,25 +19,30 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a href="index.html" class="navbar-brand text-center"><span
-                        class="font-weight-bold text-uppercase">Happy wheels</span></a> 
-                        <img src="images/bike-logo.png" class="logo float-right">
-                <div class="container">
-                    <ul class="navbar-nav mr-auto float-left">
-                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-home"></i>Home</a></li>
-                        <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-book-open"></i>About us</a></li>
-                        <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-blog"></i>Catalog</a></li>
-                        <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-address-card"></i>Sign up</a></li>
-                    </ul>
-                  <ul class="navbar-nav float-right"> 
-                        <li class="nav-item"><a href="cart.html" class="nav-link"><i
-                                    class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
-                        <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-                    </ul>
+                <!--<input class="trigger" type="checkbox" id="hamburgerButton">
+                <label for="hamburgerButton">-->
+                    <a href="index.html" class="navbar-brand text-center">
+                    <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
+                    <img src="images/bike-logo.png" class="logo float-right">
+                   <div class="container">
+                        <!--<div class="collapse">-->
+                    <ul class="navbar-nav mr-auto float-left effect-brackets">
+                                <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                                            class="fas fa-home"></i>Home</a></li>
+                                <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                                            class="fas fa-book-open"></i>About us</a></li>
+                                <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                                            class="fas fa-blog"></i>Catalog</a></li>
+                                <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
+                                            class="fas fa-address-card"></i>Sign up</a></li>
+                            </ul>
+                            <ul class="navbar-nav float-right  effect-brackets">
+                                <li class="nav-item"><a href="cart.html" class="nav-link"><i
+                                            class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
+    
+                                <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                            class="fas fa-sign-in-alt"></i>Login</a></li>
+                                </ul>
                 </div>
             </nav>
         </div>
@@ -47,14 +56,14 @@
     <footer class="bg-dark text-white">
         <div class="col-md-3 mb-3 float-left">
             <h6 class="text-dark text-muted">Social media</h6>
-            <ul class="navbar-footer">
-                <li><a class="footer-link" href="https://twitter.com/" target="_blank"><i
+            <ul class="navbar-footer footer-socials social-icon">
+                <li><a class="footer-link twitter" href="https://twitter.com/" target="_blank"><i
                             class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a class="footer-link" href="https://www.facebook.com/" target="_blank"><i
+                <li><a class="footer-link facebook" href="https://www.facebook.com/" target="_blank"><i
                             class="fab fa-facebook"></i> Facebook</a></li>
-                <li><a class="footer-link" href="https://www.instagram.com/" target="_blank"><i
+                <li><a class="footer-link instagram" href="https://www.instagram.com/" target="_blank"><i
                             class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a class="footer-link" href="https://www.google.com/" target="_blank"><i
+                <li><a class="footer-link google" href="https://www.google.com/" target="_blank"><i
                             class="fab fa-google-plus"></i> Google</a></li>
             </ul>
         </div>
@@ -70,12 +79,12 @@
         </div>
         <div class="col-md-3 mb-3 float-left">
             <h6 class="text-dark text-muted">Contact us</h6>
-            <ul class="navbar-footer">
+            <ul class="navbar-footer footer-socials social-icon">
                 <li><a class="footer-link" href="contactUS.html"><i class="fas fa-comment-dots"></i>Leave a message</a></li>
                 <li><a class="footer-link"><i class="fas fa-envelope"></i>test@test.com</a></li>
                 <li><a class="footer-link"><i class="fas fa-phone" ></i>+38 000 000 00 00</a></li>
-                <li><a class="footer-link"><i class="fab fa-viber"></i>+38 000 111 11 11</a></li>
-                <li><a class="footer-link"><i class="fab fa-telegram"></i>+38 000 111 11 11</a></li>
+                <li><a class="footer-link viber"><i class="fab fa-viber"></i>+38 000 111 11 11</a></li>
+                <li><a class="footer-link telegram"><i class="fab fa-telegram"></i>+38 000 111 11 11</a></li>
             </ul>
         </div>
         <div class="col-md-3 mb-3 float-right">

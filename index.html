@@ -9,73 +9,121 @@
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/forms.css">
     <link rel="stylesheet" href="CSS/effects.css">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
      <title>Home</title>
 </head>
 <body>
-   <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html" class="navbar-brand text-center"><span
-                        class="font-weight-bold text-uppercase">Happy wheels</span></a> 
-                        <img src="images/bike-logo.png" class="logo float-right">
-                <div class="container">
-                    <ul class="navbar-nav mr-auto float-left effect-brackets">
-                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-home"></i>Home</a></li>
-                        <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-book-open"></i>About us</a></li>
-                        <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-blog"></i>Catalog</a></li>
-                        <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
-                                    class="fas fa-address-card"></i>Sign up</a></li>
-                    </ul>
-                
-                  <ul class="navbar-nav float-right effect-ease "> 
-        
-                        <li class="nav-item"><a href="cart.html" class="nav-link"><i
-                                    class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
-                        
-                        <li class="nav-item"><a href="login.html" class="nav-link"><i class="fas fa-sign-in-alt"></i>Login</a></li>
-                    </ul>
-            
-                </div>
-            </nav>
-        </div>
-    </header>
-    <div>
-       <section class="interest">
-        <header class="popular">
-            <h2>TOP 5 </h2>
-        </header>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="top">
-                  <a href="detail.tml"><img src="images/top1.jpg" alt="" class="img-fluid">
-                </div>
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <!--<input class="trigger" type="checkbox" id="hamburgerButton">
+            <label for="hamburgerButton">-->
+                <a href="index.html" class="navbar-brand text-center">
+                <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
+                <img src="images/bike-logo.png" class="logo float-right">
+               <div class="container">
+                    <!--<div class="collapse">-->
+                <ul class="navbar-nav mr-auto float-left effect-brackets">
+                            <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                                        class="fas fa-home"></i>Home</a></li>
+                            <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                                        class="fas fa-book-open"></i>About us</a></li>
+                            <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                                        class="fas fa-blog"></i>Catalog</a></li>
+                            <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
+                                        class="fas fa-address-card"></i>Sign up</a></li>
+                        </ul>
+                        <ul class="navbar-nav float-right  effect-brackets">
+                            <li class="nav-item"><a href="cart.html" class="nav-link"><i
+                                        class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
+
+                            <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                        class="fas fa-sign-in-alt"></i>Login</a></li>
+                            </ul>
             </div>
-            <div class="col-md-3">
-                <div class="top">
-                    <a href="detail.html"><img src="images/top2.jpg" alt="" class="img-fluid"></a>
+        </nav>
+    </div>
+</header>
+  <div class="carousel">
+        <section class="hero pb-3 d-flex align-items-center">
+            <article class="slider">
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="items">
+                            <article class="slide"><img src="images/slider1.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-md-3 col-lg-6">
+                                        <p class="text-muted small text-uppercase mb-2">You want buy your first bicycle!</p>
+                                        <h1 class="h2 text-uppercase mb-3">20% off on your first bicycle with our lessons!</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Choose your bicycle</span>
+                                        </a>
+                                    </div>
+                                </div></article>
+                            <article class="slide"><img src="images/slider2.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-md-3 col-lg-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on new season</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider3.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-lg-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Assessories</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on last year Assessories</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div></article>
+                            <article class="slide"><img src="images/slider4.jpg">
+                                <div class="row px-4 px-lg-5">
+                                        <div class="slide2 col-lg-6">
+                                            <p class="text-muted small text-uppercase mb-2">Our school!</p>
+                                            <h1 class="h2 text-uppercase mb-3">10% off on our lessons till October 2020!</h1>
+                                            <a class="btn btn-browse" href="shop.html">
+                                                <span>Browse collections</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </article>
+                            <article class="slide"><img src="images/slider5.jpg"></article>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="top">
-                    <a href="detail.html"><img src="images/top3.jpg" alt="" class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="top">
-                    <a href="detail.html"><img src="images/top4.jpg" alt="" class="img-fluid"></a>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="product">
-                    <a href="detail.htl"><img src="images/top7.jpg" alt="" class="img-fluid"></a>
-                </div>
-            </div>
-        </div>
+            </article>
     </section>
     </div>
+        <section class="pt-5">
+        <header class="text-center">
+            <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
+            <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+        </header>
+    <div class="row">
+    
+        <div class="col1-md-3">
+            <a class="category-item" href="shop.html"><img class="img-fluid" src="images/catwom2.jpg" alt=""><strong class="category-item-title">Ladies</strong></a>
+        </div>
+        <div class="col1-md-3">
+            <a class="category-item mb-4" href="shop.html"><img class="img-fluid" src="images/categkids.jpg" alt=""><strong class="category-item-title">Kids</strong></a>
+        </div> 
+            <div class="col1-md-3">   
+            <a class="category-item mb-4" href="shop.html"><img class="img-fluid" src="images/catuni.jpg" alt=""><strong class="category-item-title">All</strong></a>
+        </div>
+        <div class="col1-md-3">
+            <a class="category-item" href="shop.html"><img class="img-fluid" src="images/catass2.jpg" alt=""><strong class="category-item-title">Assessories</strong></a>
+        </div>
+    </div>
+   
+</section>
 
     <div class="overlay-trend">
     <div class=text-overlay>
@@ -89,89 +137,121 @@
             <h2>Our Catalog</h2>
         </header>
         <div class="row">
-            <div class="col-md-3">
-                <div class="new_product list-unstyle">
-                    <a href="detail.html">
-                        <img src="images/bike_4.jpg" alt="description"></a>
-                    <div>
-                        <ul class="p-list">
-                            <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                            <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
-                    <h3>Product title</h3>
-                    <p>123</p>
-                </div>
+                    </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
             </div>
-            <div class="col-md-3">
-                <div class="new_product list-unstyle">
-                    <a href="detail.html">
-                        <img src="images/bike_4.jpg" alt="description"></a>
-                    <div>
-                        <ul class="p-list">
-                            <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                            <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+            </div>
+            
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
-                    <h3>Product title</h3>
-                    <p>123</p>
-                </div>
+                    </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
             </div>
-            <div class="col-md-3">
-                <div class="new_product">
-                    <a href="detail.html">
-                        <img src="images/bike_4.jpg" alt="description"></a>
-                    <div class="list-inline">
-                        <ul class="p-list">
-                            <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                            <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+            </div>
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
-                    <h3>Product title</h3>
-                    <p>123</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="new_product">
-                    <a href="detail.html">
-                        <img src="images/bike_4.jpg" alt="description"></a>
-                    <div>
                     </div>
-                        <ul class="p-list">
-                            <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                            <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
-                        </ul>
-                    <h3>Product title</h3>
-                    <p>123</p>
-
-                </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
             </div>
-        <div class="col-md-3">
-                <div class="new_product">
-                    <a href="detail.html">
-                        <img src="images/bike_4.jpg" alt="description"></a>
-                    <div>
-                        <ul class="p-list">
-                            <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li><a href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
-                            <li><a href="#"><i class="fas fa-info-circle"></i></a></li>
+            </div>
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
-                    <h3>Product title</h3>
-                    <p>123</p>
-                </div>
+                    </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
             </div>
-         
+            </div>
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                <div class="new-product text-center">
+                    <div class="position-relative mb-3">
+                       <a class="d-block" href="detail.html">
+                        <img  src="images/bike_4.jpg" alt="..."></a>
+                       <div class="product-overlay">
+                        <ul class="mb-0 list-inline">
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
+                        </ul>
+                    </div>
+                    </div>
+        
+                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
+                    <p>$200</p>
+            </div>
+            </div>
         </div>
         <div class="btn-btn">
            <a href="catalog.html">See more</a>
            </div>
     </section>
-    <!--footer-->
+
         <footer class="bg-dark text-white">
             <div class="col-md-3 mb-3 float-left">
                 <h6 class="text-dark text-muted">Social media</h6>
@@ -209,9 +289,9 @@
             <div class="col-md-3 mb-3 float-right">
                 <h6 class="text-dark text-muted">Our school</h6>
                 <ul class="navbar-footer">
-                <li><a class="footer-link" href="#">Teachers</a></li>
-                <li><a class="footer-link" href="#">Our courses</a></li>
-                <li><a class="footer-link" href="#">Our bikes</a></li>
+                <li><a class="footer-link" href="school.html">Teachers</a></li>
+                <li><a class="footer-link" href="school.html">Our courses</a></li>
+                <li><a class="footer-link" href="catalog.html">Our bikes</a></li>
             </ul>
             </div>
             <div class="col-md-3">
