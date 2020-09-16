@@ -37,7 +37,7 @@
 
 }
 /* сделать все изображения серыми на 40% */
-.new-product img {
+.newproduct img {
     filter: grayscale(40%);
     transition: all 0.3s;
 }
@@ -67,20 +67,20 @@
     opacity: 0;
 }
   
-.new-product:hover img {
+.newproduct:hover img {
     opacity: 0.3;
 }
   
-.new-product:hover .product-overlay {
+.newproduct:hover .product-overlay {
     opacity: 1;
 }
   
-.new-product:hover .product-overlay li {
+.newproduct:hover .product-overlay li {
     opacity: 1;
     transform: none;
 }
   
-.new-product .badge {
+.newproduct .badge {
     position: absolute;
     top: 1rem;
     right: 1rem;

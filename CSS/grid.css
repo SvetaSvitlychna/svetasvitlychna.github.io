@@ -27,7 +27,13 @@ flex: 0 0 20%;}
 }
 
 .row{display: flex;
-flex-wrap: wrap;}
+flex-wrap: wrap;
+/*margin-right: -15px;*/
+margin-left: -15px;}
+
+.rowprod{display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;}
 .float-left{float: left;}
 .float-right{float:right;}
 .mb-3{
@@ -79,12 +85,7 @@ body{
 }
 */
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  /*margin-right: -15px;*/
-  margin-left: -15px;
-}
+
 
 .col-3,
 .col-4,

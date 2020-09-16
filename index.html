@@ -9,14 +9,17 @@
     <link rel="stylesheet" href="CSS/grid.css">
     <link rel="stylesheet" href="CSS/forms.css">
     <link rel="stylesheet" href="CSS/effects.css">
-    <link href="CSS/animations.css" rel="stylesheet">
+    <link href="CSS/animation.css" rel="stylesheet">
     <link href="CSS/product.css" rel="stylesheet">
     <link href="CSS/slider.css" rel="stylesheet">
     <link href="CSS/nav.css" rel="stylesheet">
-     <title>Home</title>
+    <link href ="CSS/sidebar.css" rel="stylesheet"> 
+    <link href ="CSS/variables.css" rel="stylesheet">
+     
+    <title>Home</title>
 </head>
 <body>
-<header class="header">
+<header class="header">  
     <div class="container">
         <nav class="navbar">
            
@@ -36,16 +39,39 @@
                                         class="fas fa-address-card"></i>Sign up</a></li>
                         </ul>
                         <ul class="navbar-nav float-right  effect-brackets">
-                            <li class="nav-item"><a href="cart.html" class="nav-link"><i
+                            <li class="nav-item "><a class="nav-link cart-toggle"><i
                                         class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
 
                             <li class="nav-item"><a href="login.html" class="nav-link"><i
                                         class="fas fa-sign-in-alt"></i>Login</a></li>
                             </ul>
+                            
             </div>
         </nav>
     </div>
 </header>
+<aside class="sidebar">
+    <div class="sidebar-header">
+      <button class="close-btn"><i class="fas fa-times"></i></button>
+      <h5 class="logoCart">Shopping Cart</h5>
+    </div>
+    <!-- cart items -->
+    <div class="cart-items">
+        
+</div>
+        
+    <!-- buttons -->
+    
+
+    <!-- buttons -->
+    <div class="cart-footer">
+        <h3>your total : $<span class="cart-total">0</span></h3>
+        <button class="clear-cart">Clear Cart</button>
+    </div>
+
+    <!-- buttons -->
+    
+</aside>
   <div class="carousel">
         <section class="hero pb-3 d-flex align-items-center">
             <article class="slider">
@@ -84,7 +110,7 @@
                                     </div>
                                 </div></article>
                             <article class="slide"><img src="images/slider4.jpg">
-                                <div class="row px-4 px-lg-5">
+                                <div class="rowslider px-4 px-lg-5">
                                         <div class="slide2 col-lg-6">
                                             <p class="text-muted small text-uppercase mb-2">Our school!</p>
                                             <h1 class="h2 text-uppercase mb-3">10% off on our lessons till October 2020!</h1>
@@ -135,114 +161,113 @@
         <header class="recommendation">
             <h2>Our Catalog</h2>
         </header>
-        <div class="row">
+        <div class="rowprod">
             <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img class="product-img" src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart" ><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
         
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">bicycle1</a></h3>
+                    <p class="product-price ">$200</p>
             </div>
             </div>
             
             <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img class="product-img"  src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart"><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
         
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">Product title</a></h3>
+                    <p class="product-price">$200</p>
             </div>
             </div>
             <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img class="product-img" src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart" ><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
         
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">Product title</a></h3>
+                    <p class="product-price">$200</p>
             </div>
             </div>
             <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img class="product-img"  src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart"><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
         
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">Product title</a></h3>
+                    <p class="product-price">$200</p>
             </div>
             </div>
             <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img  class="product-img" src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart"><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
         
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">Product title</a></h3>
+                    <p class="product-price">$200</p>
             </div>
             </div>
-            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
-                <div class="new-product text-center">
+            <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6"> 
+                <div class="newproduct text-center">
                     <div class="position-relative mb-3">
                        <a class="d-block" href="detail.html">
-                        <img  src="images/bike_4.jpg" alt="..."></a>
+                        <img class="product-img" src="images/bike_4.jpg" alt="..."></a>
                        <div class="product-overlay">
                         <ul class="mb-0 list-inline">
                             <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="far fa-thumbs-up"></i></a></li>
-                            <li class="list-inline-item m-0 p-0" ><a class="btn " href="#"><i class="fas fa-cart-arrow-down"></i></a></li>
+                            <li class="list-inline-item m-0 p-0" ><a class="btn add-to-cart"><i class="fas fa-cart-arrow-down"></i></a></li>
                             <li class="list-inline-item m-0 p-0"><a class="btn " href="#"><i class="fas fa-info-circle"></i></a></li>
                         </ul>
                     </div>
                     </div>
-        
-                    <h3> <a class="reset-anchor" href="detail.html">Product title</a></h3>
-                    <p>$200</p>
+                    <h3> <a class="reset-anchor product-name" href="detail.html">Bicycle</a></h3>
+                    <p class="product-price">$200</p>
             </div>
             </div>
         </div>
@@ -297,5 +322,34 @@
             <p class="small">&copy; 2020 All rights reserved.</p>
         </div>
     </footer>
+    <template id="cartItem">
+        <div  class="cart-item">
+        <div class="picture product-img">
+            <img src="images/bike_5.jpg" alt="..." class="img-fluid w-100">
+        </div>
+        <div class="product-name p-auto">
+            Red digital smartwatch
+        </div>
+        <div class="remove-btn text-right">
+            <a class="reset-anchor m-auto" href="#">
+                <i class="fas fa-trash-alt"></i>
+            </a>
+        </div>
+        <div class="quantity">
+            <div class="border d-flex justify-content-around mx-auto">
+                <button class="dec-btn p-0"><i class="fas fa-caret-left"></i></button>
+                <input class="form-control form-control-sm border-0 p-0" name="quantity" type="text" value="1">
+                <button class="inc-btn p-0"><i class="fas fa-caret-right"></i></button>
+            </div>
+        </div>
+        <div class="price product-price">
+            $250
+        </div>
+    </div>
+    </template>
+    <script src="js/app.js"></script>
+    <script src="js/data.js"></script>
+    
+    
 </body>
 </html>
