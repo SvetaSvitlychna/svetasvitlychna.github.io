@@ -115,7 +115,7 @@ margin: auto
   display: inline-flex;
 }
 
-.cart-item .image-fluid{width: 40%;
+. .image-fluid{width: 40%;
 
 }
 .cart-item .form-control{
@@ -126,4 +126,4 @@ margin: auto
      display: inherit;
      padding: 30px;
    }
-  
+   
