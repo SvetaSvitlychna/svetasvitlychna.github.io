@@ -111,3 +111,19 @@ margin: auto
 .text-center{
   text-align: center;
 }
+.cart-item{
+  display: inline-flex;
+}
+
+.cart-item .image-fluid{width: 40%;
+
+}
+.cart-item .form-control{
+  display: initial;
+    width: 30%;
+   }
+   .cartnav{
+     display: inherit;
+     padding: 30px;
+   }
+  
