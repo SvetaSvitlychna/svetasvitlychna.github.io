@@ -126,4 +126,9 @@ margin: auto
      display: inherit;
      padding: 30px;
    }
-   
+   .show-sidebar
+   {transform: translate(0);}
+   @media screen and (min-width: 676px)
+.sidebar {
+    width: 400px;
+}

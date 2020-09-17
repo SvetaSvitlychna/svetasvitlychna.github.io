@@ -11,17 +11,18 @@
 }
 
 .sidebar{
-    position: absolute;
-    right:0;
-    width:25%;
-    height:fit-content;
-    background:var(--clr-white);
+ position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    
+    background: var(--clr-white);
     display: grid;
     grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
     box-shadow: var(--clr-red-dark);
     transition: var(--transition);
-    transform:translate(200%);
+    transform: translate(200%);
     border-left: 2px #ccc double;
     z-index: 10000;
 }
@@ -54,6 +55,8 @@
 }
 .show-sidebar {
     transform: translate(0);
+    position: absolute;
+    margin-top: 184px;
 }
 @media screen and (min-width: 676px) {
     .sidebar {
