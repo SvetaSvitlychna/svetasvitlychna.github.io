@@ -115,9 +115,10 @@ margin: auto
   display: inline-flex;
 }
 
-. .image-fluid{width: 40%;
-
-}
+.image-fluid{width: 40%;
+  }
+ 
+ 
 .cart-item .form-control{
   display: initial;
     width: 30%;
@@ -126,8 +127,4 @@ margin: auto
      display: inherit;
      padding: 30px;
    }
-   .show-sidebar
-   {transform: translate(0);}
-   @media screen and (min-width: 676px) .sidebar {
-    width: 400px;
-}
+ 

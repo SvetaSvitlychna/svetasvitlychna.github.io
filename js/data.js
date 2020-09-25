@@ -1,4 +1,4 @@
-const products =[
+const newproduct =[
     {
         id:1,
         image:'images/prod1W.jpg',
@@ -26,7 +26,7 @@ const products =[
 {
     id:6,
         image:'images/prod6K.jpg',
-        name:'Bicycle 26',
+        name:'Bicycle 25',
         price: 2100,
 },
 {id:7,
@@ -186,3 +186,41 @@ price:3300,
 }
 
 ];
+// newproduct.forEach(function(item){
+// for (let key  in item)
+// {    console.log(key+': '+item [key]);
+// }
+// });
+
+const products =[
+                 {
+                     id:15,
+                     image:'images/prod17W.jpg',
+                    name:'Bicycle 2 ',
+                     price: 2000,
+                },
+            {id:11,
+                     image:'images/prod12M.jpg',
+             name:'Bicycle 21',
+                     price: 2500,},
+             {id:5,
+                     image:'images/prod5K.jpg.png',
+                     name:'Bicycle 26',
+             price: 2050,},
+     {id:7,
+                 image:'images/Prod8T.jpg',
+                         name:'Bicycle 24',
+                         price: 2400,},
+             {
+                 id:9,
+                     image:'images/prod10E.jpg',
+                     name:'Bicycle 27',
+                     price: 3000,
+             },
+             {
+                 id:10,
+                     image:'images/Prod11U.jpg',
+                     name:'Bicycle 22',
+                     price: 900,
+         },
+]

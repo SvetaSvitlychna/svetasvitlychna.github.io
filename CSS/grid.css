@@ -26,6 +26,13 @@ flex: 0 0 20%;}
     height: auto;
 }
 
+.product-img .img-fluid {
+  max-width: 60%;
+  height: auto;
+}
+.product-img{
+  display:inline-flex;
+}
 .row{display: flex;
 flex-wrap: wrap;
 /*margin-right: -15px;*/
