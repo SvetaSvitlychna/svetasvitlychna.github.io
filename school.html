@@ -40,8 +40,8 @@
                                         class="fas fa-address-card"></i>Sign up</a></li>
                         </ul>
                         <ul class="navbar-nav float-right  effect-brackets">
-                            <li class="nav-item"><a href="cart.html" class="nav-link"><i
-                                        class="fas fa-cart-plus"></i>Cart<small>(2)</small></a></li>
+                            <li class="nav-item "><a class="nav-link cart-toggle"><i
+                                class="fas fa-cart-plus"></i>(<small>0</small>)</a></li>
 
                             <li class="nav-item"><a href="login.html" class="nav-link"><i
                                         class="fas fa-sign-in-alt"></i>Login</a></li>
@@ -50,7 +50,7 @@
         </nav>
     </div>
 </header>
-<aside class="sidebar show-sidebar">
+<aside class="sidebar ">
     <div class="sidebar-header">
       <button class="close-btn"><i class="fas fa-times"></i></button>
       <h5 class="logoCart">Shopping Cart</h5>
@@ -141,11 +141,12 @@
           </div>
           </div>
     <div class="price product-price">
-        $250
+        $<span class="product-price">250</span>
         </div>
    </div>
 </template>
-<script src="js/app.js"></script>
 <script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>

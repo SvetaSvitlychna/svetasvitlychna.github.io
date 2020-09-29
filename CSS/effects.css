@@ -23,6 +23,15 @@ transform: all 0.5s ease-in;
   border-radius: 50%;
   border:1px solid white;  
 }
+.footer-contact a i{
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border:1px solid white;  
+  }
 .social-icon i.fa-facebook:hover{
     background: #3b5998;
     border-color: #3b5998;}
