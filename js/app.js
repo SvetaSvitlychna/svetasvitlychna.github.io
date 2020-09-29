@@ -61,27 +61,51 @@ function createNewMarkup(data){
                </div>
                </div>`             
    }
-
-   function footerSocials(className, url, icon, capture=''){
-       return`
-       <li><a class="footer-link ${className}" href="${url}" target="_blank"><i
-       class="fab ${icon}"></i> ${capture}</a></li>`
+   function socIcon(className, icon, capture=''){
+    return `<li class="list-inline-item m-0 p-0 ${className}"><a class="btn" href="#" ><i class="fas ${icon}"></i>${capture}</a></li>`;
    }
-
-   function footerService( url,  capture=''){
-    return`
-    <li><a class="footer-link" href="${url}">${capture} </a></li>`
-}
-function footerContact(className, url, icon, capture=''){
-    return`
-    <li><a class="footer-link ${className}" href="${url}"><i class=" ${icon}"></i>${capture}</a></li>
-    `
-} 
-function navbarNav(className, url, icon, capture=''){
-    return`
-<li class="nav-item active ${className}"><a href="${url}" class="nav-link" target="_blank"><i
-class="fas ${icon}"></i>${capture}</a></li>`
-}
+   
+   function createNewMarkup(data){
+       return `
+       <div class="col-md-3 col-xl-3 col-lg-4 col-sm-6">
+                       <div class="newproduct text-center" data-id="${data.id}">
+                          <div class="position-relative mb-3">
+                            <a class="d-block" href="detail.html">
+                               <img class="product-img" src="${data.image}" alt="..."></a>
+                             <div class="product-overlay">
+                               <ul class="mb-0 list-inline">
+                                  ${socIcon('like-this', 'fa-thumbs-up',)}
+                                  ${socIcon('add-to-cart',' fa-cart-arrow-down', )}
+                                  ${socIcon('view-this','fa-info-circle',)}
+                              </ul>
+                          </div>
+                           </div>     
+                        <h3> <a class="reset-anchor product-name" href="detail.html">${data.name}</a></h3>
+                         <p class="product-price " data-price="${data.price}">${data.price}</p>
+                  </div>
+                  </div>`             
+      }
+   
+      function footerSocials(className, url, icon, capture=''){
+          return`
+          <li><a class="footer-link ${className}" href="${url}" target="_blank"><i
+          class="fab ${icon}"></i> ${capture}</a></li>`
+      }
+   
+      function footerService( url,  capture=''){
+       return`
+       <li><a class="footer-link" href="${url}">${capture} </a></li>`
+   }
+   function footerContact(className, url, icon, capture=''){
+       return`
+       <li><a class="footer-link ${className}" href="${url}"><i class=" ${icon}"></i>${capture}</a></li>
+       `
+   } 
+   function navbarNav(className, url, icon, capture=''){
+       return`
+   <li class="nav-item active ${className}"><a href="${url}" class="nav-link" target="_blank"><i
+   class="fas ${icon}"></i>${capture}</a></li>`
+   }
 
 //=========
 (function(){
@@ -127,7 +151,6 @@ newproduct.forEach(function(item) {
     // result+=createMarkup(item);
     result+=createNewMarkup(item);
 });
-document.querySelector('.showcase').innerHTML = result;
 
 document.querySelector('.navbar-nav').innerHTML =
 `${navbarNav('', 'index.html', 'fa-home', 'Home')}
@@ -158,8 +181,9 @@ ${footerContact('viber','','fab fa-viber', '+38 000 111 11 11')}
 ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 
 
-
-let content = document.getElementById("cartItem").content;
+document.querySelector('.showcase').innerHTML = result;
+     let content = document.getElementById("cartItem").content;
+        
    const addToCart =document.getElementsByClassName("add-to-cart");
 const template =document.getElementById("cartItem").content;
 for(let i=0; i<addToCart.length; i++){
