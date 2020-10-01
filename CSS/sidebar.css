@@ -24,7 +24,7 @@
         transition: var(--transition);
         transform: translate(200%);
         border-left: 2px #ccc double;
-       z-index: 10000;
+       z-index: 10;
 }
 
 .sidebar-header {
@@ -61,4 +61,21 @@
     .sidebar {
       width: 400px;
     }
+}
+
+
+.justify-content-around {
+    justify-content: space-around !important;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.d-flex {
+    display: flex;
+}
+.border {
+  border: 1px solid #dee2e6 !important;
 }
