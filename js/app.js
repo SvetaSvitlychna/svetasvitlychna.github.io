@@ -158,7 +158,7 @@ addCartItem(item){
                 </div>
             </div>
             <div class="price">
-                $<span class="product-price itemprice">${item.price}</span>
+                $<span class="product-price">${item.price}</span>
             </div>`;
  this.cartItems.appendChild(div);
 }
