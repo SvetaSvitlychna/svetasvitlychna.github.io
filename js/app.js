@@ -85,7 +85,7 @@ class App{
     toggleBtn.addEventListener('click',  ()=> this.openCart());
     closeBtn.addEventListener('click',  () => this.closeCart());
       this.navbarToggle();
-      this.makeShowCase();
+      this.makeShowCase(newproduct);
       document.querySelector('footer div.footerIcon').firstElementChild.innerHTML = this.makeLiGroup(socialGroup, 'navbar-footer footer-socials social-icon', '<h6 class="text-dark text-muted">Social media</h6>');
       let data = new Product();
       console.log(data.getProduct());
@@ -143,11 +143,12 @@ makeLiGroup = (group,ulClass, header='')=>{
     </ul>`;
 }
 
-makeShowCase(){
+makeShowCase(newproduct){
+    if (!document.querySelector('.showcase')){
+        return;
+    }
     let result = '';
-newproduct.forEach(item=> {
-  
-    result+=this.createProductMarkUp(item);
+newproduct.forEach(item=> {result+=this.createProductMarkUp(item);
 });
 document.querySelector('.showcase').innerHTML = result;
 }
@@ -234,19 +235,10 @@ clear = () =>{
 }
 
 setCartTotal(cart){
-     let temptTotal = 0;
-     let itemTotal =0;
-        cart.map(item => {
-         temptTotal+= item.price * item.amount;
-                itemTotal += item.amount;
-     });
-     document.querySelector('.cart-total').textContent = parseFloat(temptTotal.toFixed(2));
-     document.querySelector('.count-items').textContent = itemTotal;
-    
-    
+     
+     document.querySelector('.cart-total').textContent = parseFloat(cart.reduce((p, c)=>p+c.amount*c.price,0).toFixed(2));
+     document.querySelector('.count-items').textContent = cart.reduce((prev, cur)=> prev + cur.amount,0);
 }
-
-
 
  renderCart(){
 
@@ -313,12 +305,11 @@ function navbarNav(className, url, icon, capture=''){
 
 
 
-
 //=========
 (function(){
     const app =new App();
-     
-
+    const categories = document.querySelector('.categories')
+  console.log(categories);
 document.querySelector('.navbar-nav').innerHTML =
 `${navbarNav('', 'index.html', 'fa-home', 'Home')}
 ${navbarNav('','aboutUs.html','fa-book-open', 'About' )}
@@ -343,5 +334,30 @@ ${footerContact('telegram','','fab fa-telegram', '+38 000 111 11 11')}`;
 app.addToCart();
 app.renderCart();
 
+ 
+const chooseCategory = event => {
+    //event.preventDefault();
+
+    const target = event.target;
+    console.log(target);
+
+    if (target.classList.contains('category-item')) {
+        const category = target.dataset.category;
+        console.log(category);
+        const categoryFilter =items => items.filter(item=> item.category.includes(category));
+        app.makeShowcase(categoryFilter(newproduct)); 
+        console.log(app.makeShowcase);
+    } else {
+        app.makeShowcase(newproduct);
+        console.log(app.makeShowcase); 
+    }
+    app.addToCart();
+    app.renderCart();
+    
+}
+if (categories){categories.addEventListener('click', chooseCategory); 
+console.log(categories);}
 })();
+
+
 
