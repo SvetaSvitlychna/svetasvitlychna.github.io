@@ -14,13 +14,6 @@ body {
     display: inline-flexbox;
 }
 
-.popular {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style: italic;
-    margin-top: -20px;
-}
-
 .row {
     background-color: rgb(241, 237, 237);
 }
@@ -36,13 +29,6 @@ body {
     text-align: center;
     font-style: oblique;
     margin-top: -20px;
-}
-
-.interest {
-    background-color: rgb(241, 237, 237);
-    display: block;
-    padding: 1em;
-    margin-bottom: -15px;
 }
 
 .bg {
@@ -104,11 +90,6 @@ body {
     border-color: #353433;
 }
 
-.list-unstyle {
-    list-style: none;
-    text-decoration: none;
-}
-
 .list-inline {
     display: flex;
     list-style: none;
@@ -124,18 +105,4 @@ body {
 
 .cart-item {
     display: inline-flex;
-}
-
-.image-fluid {
-    width: 40%;
-}
-
-.cart-item .form-control {
-    display: initial;
-    width: 30%;
-}
-
-.cartnav {
-    display: inherit;
-    padding: 30px;
 }
