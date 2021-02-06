@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/Styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href="CSS/grid.css" rel="stylesheet">
+    <link href="CSS/forms.css" rel="stylesheet">
+    <link href="CSS/effects.css" rel="stylesheet">
+    <!-- <link href="CSS/animation.css" rel="stylesheet"> -->
+    <link href="CSS/product.css" rel="stylesheet">
+    <link href="CSS/slider.css" rel="stylesheet">
+    <link href="CSS/nav.css" rel="stylesheet">
+    <link href="CSS/sidebar.css" rel="stylesheet">
+    <link href="CSS/variables.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="navbar-brand text-center">
+                    <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
+                <!-- <img src="images/bike-logo.png" class="logo float-right"> -->
+                <img class="logo float-right move-right move-left" src="https://www.gifki.org/data/media/237/velosiped-animatsionnaya-kartinka-0098.gif" alt="velosiped-animatsionnaya-kartinka-0098" /></a>
+                <div class="navcontainer linkscont">
+
+                    <ul class="navbar-nav mr-auto float-left effect-brackets links-container">
+
+                    </ul>
+                    <ul class="navbar-nav float-right  effect-brackets">
+                        <li class="nav-item "><a class="nav-link cart-toggle"><i
+                                        class="fas fa-cart-plus"></i>(<small class="count-items">0</small>)</a></li>
+
+                        <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                        class="fas fa-sign-in-alt"></i>Login</a></li>
+                    </ul>
+                    <button class="nav-toggle">
+                                <i class="fas fa-bars"></i>
+                            </button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <aside class="sidebar ">
+        <div class="sidebar-header">
+            <button class="close-btn"><i class="fas fa-times"></i></button>
+            <h5 class="logoCart">Shopping Cart</h5>
+        </div>
+        <!-- cart items -->
+        <div class="cart-items">
+
+        </div>
+
+        <!-- buttons -->
+
+
+        <!-- buttons -->
+        <div class="cart-footer">
+            <h3>your total : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart">Clear Cart</button>
+        </div>
+
+        <!-- buttons -->
+
+    </aside>
+    <div class="carousel">
+        <section class="hero pb-3 d-flex align-items-center">
+            <article class="slider">
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="items">
+                            <article class="slide"><img src="images/slider1.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">You want buy your first bicycle!</p>
+                                        <h1 class="h2 text-uppercase mb-3">20% off on your first bicycle with our lessons!</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Choose your bicycle</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider2.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on new season</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider3.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Assessories</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on last year Assessories</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider4.jpg">
+                                <div class="rowslider px-4 px-lg-5">
+                                    <div class="slide2 col-lg-6">
+                                        <p class="text-muted small text-uppercase mb-2">Our school!</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on our lessons till October 2020!</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider5.jpg"></article>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <section class="pt-5 categories">
+        <header class="text-center">
+            <p class="small text-muted small text-uppercase mb-1">Carefully created collections</p>
+            <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+        </header>
+        <div class="row">
+
+            <div class="col1-md-3">
+                <a class="category-item mb-4" data-category="bicycle" href="#"><img class="img-fluid" src="images/catwom2.jpg" alt=""><strong class="category-item category-item-title " data-category="bicycle">Bicycle</strong></a>
+            </div>
+            <!-- <div class="col1-md-3">
+            <a class="category-item mb-4"  data-category ="accessories" href="#"><img class="img-fluid" src="images/categkids.jpg" alt=""><strong class="category-item category-item-title " data-category ="kids">Kids</strong></a>
+        </div>  -->
+            <div class="col1-md-3">
+                <a class="category-item mb-4" data-category="clothes" href="#"><img class="img-fluid" src="images/prod33ClothM.jpg" alt=""><strong class="category-item category-item-title " data-category="clothes">Clothes</strong></a>
+            </div>
+            <div class="col1-md-3">
+                <a class="category-item mb-4" data-category="accessories" href="#"><img class="img-fluid" src="images/catass2.jpg" alt=""><strong class="category-item category-item-title " data-category="accessories">Accessories</strong></a>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="overlay-trend">
+        <div class=text-overlay>
+            <h2>You can't ride a bike</h2>
+            <p>We fix it! </p>
+            <a href="#" class="btn btn-dark">Sign in to our school &raquo;</a>
+        </div>
+    </div>
+    <section class="backgr">
+        <header class="recommendation">
+            <h2>Our Catalog</h2>
+        </header>
+        <div class="showcase rowprod">
+
+
+            <div class="btn-btn">
+                <a href="catalog.html">See more</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg">
+        <div class="footerIcon">
+            <div class="col-md-3 mb-3 float-left">
+
+            </div>
+            <div class="col-md-3 mb-3 float-left">
+                <h6 class="text-dark text-muted">Customer service</h6>
+                <ul class="navbar-footer footer-service">
+
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3 float-left">
+                <h6 class="text-dark text-muted">Contact us</h6>
+                <ul class="navbar-footer footer-contact social-icon">
+
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3 float-right">
+                <h6 class="text-dark text-muted">Our school</h6>
+                <ul class="navbar-footer footer-school">
+                    <li><a class="footer-link teachers" href="school.html">Teachers</a></li>
+                    <li><a class="footer-link courses" href="school.html">Our courses</a></li>
+                    <li><a class="footer-link ourBikes" href="catalog.html">Our bikes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <p class="small">&copy; 2020 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/data.js"></script> -->
+    <script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>

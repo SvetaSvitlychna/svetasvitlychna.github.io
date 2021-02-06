@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/grid.css">
+        <link rel="stylesheet" href="CSS/forms.css">
+        <link rel="stylesheet" href="CSS/effects.css">
+        <link href="CSS/animation.css" rel="stylesheet">
+        <link href="CSS/product.css" rel="stylesheet">
+        <link href="CSS/slider.css" rel="stylesheet">
+        <link href="CSS/nav.css" rel="stylesheet">
+        <link href ="CSS/sidebar.css" rel="stylesheet"> 
+        <link href ="CSS/variables.css" rel="stylesheet">
+         
+        <title>Catalog</title>
+    </head>
+<body>
+    <div class="overlay"></div>
+    <header class="header">  
+        <div class="container">
+            <nav class="navbar">
+                     <a href="index.html" class="navbar-brand text-center">
+                    <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
+                    <img src="images/bike-logo.png" class="logo float-right">
+                   <div class="navcontainer linkscont">
+                    
+                    <ul class="navbar-nav mr-auto float-left effect-brackets links-container">
+                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                            class="fas fa-home"></i>Home</a></li>
+                <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                            class="fas fa-book-open"></i>About us</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                            class="fas fa-blog"></i>Catalog</a></li>
+                <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
+                            class="fas fa-address-card"></i>Sign up</a></li>
+                            </ul>
+                            <ul class="navbar-nav float-right  effect-brackets">
+                                <li class="nav-item "><a class="nav-link cart-toggle"><i
+                                            class="fas fa-cart-plus"></i>(<small class="count-items">0</small>)</a></li>
+    
+                                <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                            class="fas fa-sign-in-alt"></i>Login</a></li>
+                                </ul>
+                                <button class="nav-toggle">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                
+                </div>
+            </nav>
+        </div>
+    </header>
+    <aside class="sidebar ">
+        <div class="sidebar-header">
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+          <h5 class="logoCart">Shopping Cart</h5>
+        </div>
+        <!-- cart items -->
+        <div class="cart-items">
+            
+    </div>
+            
+        <!-- buttons -->
+        
+    
+        <!-- buttons -->
+        <div class="cart-footer">
+            <h3>your total : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart">Clear Cart</button>
+        </div>
+    
+        <!-- buttons -->
+        
+    </aside>
+    <!-- <div class="carousel">
+        <section class="hero pb-3 d-flex align-items-center">
+            <article class="slider">
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="items">
+                            <article class="slide"><img src="images/slider1.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">You want buy your first bicycle!</p>
+                                        <h1 class="h2 text-uppercase mb-3">20% off on your first bicycle with our lessons!</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Choose your bicycle</span>
+                                        </a>
+                                    </div>
+                                </div></article>
+                            <article class="slide"><img src="images/slider2.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Inspiration 2020</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on new season</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="slide"><img src="images/slider3.jpg">
+                                <div class="row px-4 px-lg-5">
+                                    <div class="slide2 col-xl-3 col-lg-4 col-sm-6">
+                                        <p class="text-muted small text-uppercase mb-2">New Assessories</p>
+                                        <h1 class="h2 text-uppercase mb-3">10% off on last year Assessories</h1>
+                                        <a class="btn btn-browse" href="shop.html">
+                                            <span>Browse collections</span>
+                                        </a>
+                                    </div>
+                                </div></article>
+                            <article class="slide"><img src="images/slider4.jpg">
+                                <div class="rowslider px-4 px-lg-5">
+                                        <div class="slide2 col-lg-6">
+                                            <p class="text-muted small text-uppercase mb-2">Our school!</p>
+                                            <h1 class="h2 text-uppercase mb-3">10% off on our lessons till October 2020!</h1>
+                                            <a class="btn btn-browse" href="shop.html">
+                                                <span>Browse collections</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </article>
+                            <article class="slide"><img src="images/slider5.jpg"></article>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    </section>
+    </div> -->
+    <section class="py-5">
+        <div class="container p-0">
+            <div class="row categories">
+                <!-- SHOP SIDEBAR-->
+                <div class="col-3 order-2 ">
+                    <h5 class="text-uppercase mb-4">Categories</h5>
+                    
+                    <div class="py-2 px-4 bg-dark text-white mb-3"><strong class="small text-uppercase font-weight-bold">Bicycle</strong></div>
+                    <ul class="list-unstyled small text-muted pl-4 font-weight-normal">
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">Women's </a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">Unisex</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">For Kids</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">Teenager</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">City</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="bicycle">Electrical</a></li>
+                    </ul>
+                    <div class="py-2 px-4 bg-light mb-3"><strong class="small text-uppercase font-weight-bold">Accessories</strong></div>
+                    <ul class="list-unstyled small text-muted pl-4 font-weight-normal">
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Wheel</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Pedal</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Security Lock</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Bell</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Chairwheel</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Tyre</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="accessories">Oil</a></li>
+                    </ul>
+                    <div class="py-2 px-4 bg-light mb-3"><strong class="small text-uppercase font-weight-bold">Clothes</strong></div>
+                    <ul class="list-unstyled small text-muted pl-4 font-weight-normal mb-5">
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="clothes">Women's</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="clothes">Men's</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="clothes">Kids</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="clothes">Teenager</a></li>
+                        <li class="mb-2"><a class="reset-anchor category-item" href="#" data-category="clothes">Unisex</a></li> 
+                    </ul> </div>
+                <!-- SHOP LISTING-->
+                <div class="col-lg-9 order-1 order-lg-2 mb-5 mb-lg-0">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-lg-6 mb-2 mb-lg-0">
+                            <p class="text-small text-muted mb-0">Showing 1–12 of 53 results</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-inline d-flex align-items-center justify-content-end mb-0">
+                                <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th-large"></i></a></li>
+                                <li class="list-inline-item text-muted mr-3"><a class="reset-anchor p-0" href="#"><i class="fas fa-th"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+        <section class="backgr">
+            <header class="recommendation">
+                <h2>Our Catalog</h2>
+            </header>
+            <div class="rowprod showcase">
+      
+            </div>
+            <div class="btn-btn">
+               <a href="catalog.html">See more</a>
+               </div>
+        </section>
+        </div>
+            </div>
+        </section>
+                 
+        <footer class="bg-dark text-white">
+            <div class="footerIcon">
+                <div class="col-md-3 mb-3 float-left">
+                    
+                </div>
+                <div class="col-md-3 mb-3 float-left">
+                    <h6 class="text-dark text-muted">Customer service</h6>
+                    <ul class="navbar-footer footer-service">
+                    
+                </ul>
+                </div>
+                <div class="col-md-3 mb-3 float-left">
+                    <h6 class="text-dark text-muted">Contact us</h6>
+                    <ul class="navbar-footer footer-contact social-icon">
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3 float-right">
+                    <h6 class="text-dark text-muted">Our school</h6>
+                    <ul class="navbar-footer footer-school">
+                    <li><a class="footer-link teachers" href="school.html">Teachers</a></li>
+                    <li><a class="footer-link courses" href="school.html">Our courses</a></li>
+                    <li><a class="footer-link ourBikes" href="catalog.html">Our bikes</a></li>
+                </ul>
+                </div>
+                <div class="col-md-3">
+                <p class="small">&copy; 2020 All rights reserved.</p>
+            </div>
+            </div>
+        </footer>
+       
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="CSS/grid.css">
+        <link rel="stylesheet" href="CSS/forms.css">
+        <link rel="stylesheet" href="CSS/effects.css">
+        <link href="CSS/animation.css" rel="stylesheet">
+        <link href="CSS/product.css" rel="stylesheet">
+        <link href="CSS/slider.css" rel="stylesheet">
+        <link href="CSS/nav.css" rel="stylesheet">
+        <link href ="CSS/sidebar.css" rel="stylesheet"> 
+        <link href ="CSS/variables.css" rel="stylesheet">
+         
+        <title>Cart</title>
+    </head>
+<body>
+    <div class="overlay"></div>
+    <header class="header">  
+        <div class="container">
+            <nav class="navbar">
+                     <a href="index.html" class="navbar-brand text-center">
+                    <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
+                    <img src="images/bike-logo.png" class="logo float-right">
+                   <div class="navcontainer linkscont">
+                    
+                    <ul class="navbar-nav mr-auto float-left effect-brackets links-container">
+                        <li class="nav-item active"><a href="index.html" class="nav-link" target="_blank"><i
+                            class="fas fa-home"></i>Home</a></li>
+                <li class="nav-item"><a href="aboutUs.html" class="nav-link" target="_blank"><i
+                            class="fas fa-book-open"></i>About us</a></li>
+                <li class="nav-item"><a href="catalog.html" class="nav-link" target="_blank"><i
+                            class="fas fa-blog"></i>Catalog</a></li>
+                <li class="nav-item"><a href="SignUp.html" class="nav-link" target="_blank"><i
+                            class="fas fa-address-card"></i>Sign up</a></li>
+                            </ul>
+                            <ul class="navbar-nav float-right  effect-brackets">
+                                <li class="nav-item "><a class="nav-link cart-toggle"><i
+                                            class="fas fa-cart-plus"></i>(<small class="count-items">0</small>)</a></li>
+    
+                                <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                            class="fas fa-sign-in-alt"></i>Login</a></li>
+                                </ul>
+                                <button class="nav-toggle">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                
+                </div>
+            </nav>
+        </div>
+    </header>
+    <aside class="sidebar ">
+        <div class="sidebar-header">
+          <button class="close-btn"><i class="fas fa-times"></i></button>
+          <h5 class="logoCart">Shopping Cart</h5>
+        </div>
+        <!-- cart items -->
+        <div class="cart-items">
+            
+    </div>
+            
+        <!-- buttons -->
+        
+    
+        <!-- buttons -->
+        <div class="cart-footer">
+            <h3>your total : $<span class="cart-total">0</span></h3>
+            <button class="clear-cart">Clear Cart</button>
+        </div>
+    
+        <!-- buttons -->
+        
+    </aside>
+  
+    <div class="overlay-cart">
+        
+    </div>
+    
+    <footer class="bg-dark text-white">
+        <div class="footerIcon">
+            <div class="col-md-3 mb-3 float-left">
+                <h6 class="text-dark text-muted">Social media</h6>
+                <ul class="navbar-footer footer-socials social-icon">
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3 float-left">
+                <h6 class="text-dark text-muted">Customer service</h6>
+                <ul class="navbar-footer">
+                        <li><a class="footer-link" href="#">Help </a></li>
+                        <li><a class="footer-link" href="#">FAQs</a></li>
+                        <li><a class="footer-link" href="#">Returns</a></li>
+                        <li><a class="footer-link" href="#">Refund</a></li>
+                        <li><a class="footer-link" href="#">Delivery</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3 mb-3 float-left">
+                <h6 class="text-dark text-muted">Contact us</h6>
+                <ul class="navbar-footer footer-contact social-icon">
+                        <li><a class="footer-link" href="contactUS.html"><i class="fas fa-comment-dots"></i>Leave a message</a></li>
+                        <li><a class="footer-link"><i class="fas fa-envelope"></i>test@test.com</a></li>
+                        <li><a class="footer-link"><i class="fas fa-phone" ></i>+38 000 000 00 00</a></li>
+                        <li><a class="footer-link viber"><i class="fab fa-viber"></i>+38 000 111 11 11</a></li>
+                        <li><a class="footer-link telegram"><i class="fab fa-telegram"></i>+38 000 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3 float-right">
+                <h6 class="text-dark text-muted">Our school</h6>
+                <ul class="navbar-footer footer-school">
+                <li><a class="footer-link teachers" href="school.html">Teachers</a></li>
+                <li><a class="footer-link courses" href="school.html">Our courses</a></li>
+                <li><a class="footer-link ourBikes" href="catalog.html">Our bikes</a></li>
+            </ul>
+            </div>
+            <div class="col-md-3">
+            <p class="small">&copy; 2020 All rights reserved.</p>
+        </div>
+        </div>
+    </footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
