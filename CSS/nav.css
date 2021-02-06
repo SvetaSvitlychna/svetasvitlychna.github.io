@@ -127,12 +127,13 @@
     height: auto !important;
 }
 
-.linkscont {
+
+/* .linkscont {
     height: 0;
     overflow: hidden;
     transition: var(--transition);
     height: auto !important;
-}
+} */
 
 @media (min-width: 300px) {
     .navcontainer {
