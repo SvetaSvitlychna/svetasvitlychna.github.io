@@ -93,3 +93,7 @@
 .border {
     border: 1px solid #dee2e6 !important;
 }
+
+.cart-footer {
+    margin: 10px;
+}
