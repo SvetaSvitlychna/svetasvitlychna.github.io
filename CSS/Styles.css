@@ -106,3 +106,8 @@ body {
 .cart-item {
     display: inline-flex;
 }
+
+.product-name {
+    margin: 10px;
+    padding: 1px;
+}

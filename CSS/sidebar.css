@@ -81,10 +81,14 @@
     margin-right: auto !important;
 }
 
+.mx-auto-cart {
+    margin-right: 2px !important;
+    margin: 10px;
+}
 
-/* .d-flex {
+.d-flex {
     display: flex;
-} */
+}
 
 .border {
     border: 1px solid #dee2e6 !important;

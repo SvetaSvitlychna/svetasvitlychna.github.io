@@ -204,23 +204,27 @@ class App {
         div.setAttribute('id', item.id);
         div.innerHTML = `
             <div class="picture product-img">
+              <div class="product-name p-auto">${item.name}</div>
                     <img src="${item.image}" alt="${item.name}" class="img-fluid w-100">
-                </div>
-                <div class="product-name p-auto">${item.name}</div>
-                <div class="remove-btn text-right">
-                    <a class="reset-anchor m-auto" href="#">
-                        <i class="fas fa-trash-alt" data-id=${item.id}></i>
-                    </a>
+               
+                
+                
                 </div>
                 <div class="quantity">
-                    <div class="border d-flex justify-content-around mx-auto">
+                    <div class="border d-flex justify-content-around mx-auto-cart">
                         <i class="fas fa-caret-left inc-dec-btn" data-id=${item.id}></i>
                         <span class="border-1 p-1 amount">${item.amount}</span>
                         <i class="fas fa-caret-right inc-dec-btn" data-id=${item.id}></i>
                     </div>
                 </div>
+                 
                 <div class="price">
                     $<span class="product-price">${item.price}</span>
+                </div>
+                <div class="remove-btn text-right">
+                    <a class="reset-anchor m-auto" href="#">
+                        <i class="fas fa-trash-alt" data-id=${item.id}></i>
+                    </a>
                 </div>`;
         this.cartItems.appendChild(div);
     }
