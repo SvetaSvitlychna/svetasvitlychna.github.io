@@ -106,3 +106,8 @@
 .reset-anchor:focus {
     text-decoration: none;
 }
+
+.cat-name {
+    font-size: 20px;
+    margin: 15px;
+}

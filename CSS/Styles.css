@@ -32,7 +32,7 @@ body {
 }
 
 .bg {
-    background-color: #cf740c;
+    background-color: rgb(243, 165, 76);
     padding: 1em;
     font-size: 18px;
 }
@@ -94,7 +94,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0em;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: unset;
     /* margin: auto */
 }
