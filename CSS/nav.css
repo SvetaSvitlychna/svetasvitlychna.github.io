@@ -36,16 +36,6 @@
     display: inline-flex;
     max-height: 5em;
     animation: move 10s infinite alternate linear;
-    transform: translate(10, 0);
-}
-
-@keyframes move {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-300px, 0, 0);
-    }
 }
 
 .logo:after {
@@ -120,42 +110,73 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    min-width: 1160px;
+    min-width: 500px;
+    max-width: 1200px;
     height: 0;
     overflow: hidden;
     transition: var(--transition);
     height: auto !important;
 }
 
-
-/* .linkscont {
+.linkscont {
     height: 0;
     overflow: hidden;
     transition: var(--transition);
     height: auto !important;
-} */
+}
 
-@media (min-width: 300px) {
-    .navcontainer {
-        max-width: 540px;
+@media (min-width: 300px) and (max-width: 499px) {
+    @keyframes move {
+        0% {
+            transform: translate3d(100px, 0, 0);
+        }
+        100% {
+            transform: translate3d(1px, 0, 0);
+        }
     }
 }
 
-@media (min-width: 500px) {
-    .navcontainer {
-        max-width: 1023px;
+@media (min-width: 500px) and (max-width: 699px) {
+    @keyframes move {
+        0% {
+            transform: translate3d(30px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-20px, 0, 0);
+        }
     }
 }
 
-@media (min-width: 1024px) {
-    .navcontainer {
-        max-width: 1279x;
+@media (min-width: 700px) and (max-width: 959px) {
+    @keyframes move {
+        0% {
+            transform: translate3d(-25px, 0, 0);
+        }
+        100% {
+            transform: translate3d(160px, 0, 0);
+        }
     }
 }
 
-@media (min-width: 1280px) {
-    .navcontainer {
-        max-width: 1280px;
+@media (min-width: 960px) and (max-width: 1024px) {
+    @keyframes move {
+        0% {
+            transform: translate3d(-450px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-30px, 0, 0);
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    @keyframes move {
+        0% {
+            transform: translate3d(-450px, 0, 0);
+        }
+        100% {
+            transform: translate3d(-30px, 0, 0);
+        }
     }
 }
 
@@ -166,7 +187,7 @@
         width: 100%;
         left: 0;
         text-align: center;
-        z-index: 10000;
+        z-index: 0;
     }
 }
 

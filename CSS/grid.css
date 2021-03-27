@@ -1,13 +1,70 @@
 .col {
-    width: 100%;
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
 .col-1 {
-    width: calc(1 * 100% / 12);
+    flex: 0 0 8.333333333333333%;
+    max-width: calc(1 * 100% / 12);
 }
 
 .col-2 {
-    width: calc(2 * 100% / 12);
+    flex: 0 0 16.66666666666667%;
+    max-width: calc(2 * 100% / 12);
+}
+
+.col-3 {
+    max-width: calc(3 * 100% / 12);
+    width: calc(3 * 100% / 12);
+    flex: 0 0 25%;
+}
+
+.col-4 {
+    flex: 0 0 33.333333%;
+    max-width: calc(4 * 100% / 12);
+    width: calc(4 * 100% / 12);
+}
+
+.col-5 {
+    flex: 0 0 41.66666666666667%;
+    max-width: calc(5 * 100% / 12);
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    max-width: calc(6 * 100% / 12);
+}
+
+.col-7 {
+    flex: 0 0 58.33333333333333%;
+    max-width: calc(7 * 100% / 12);
+}
+
+.col-8 {
+    flex: 0 0 66.66666666666667%;
+    max-width: calc(8 * 100% / 12);
+}
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+    max-width: calc(9 * 100% / 12);
+}
+
+.col-10 {
+    flex: 0 0 83.33333333333333%;
+    max-width: calc(10 * 100% / 12);
+}
+
+.col-11 {
+    flex: 0 0 91.66666666666667%;
+    max-width: calc(11 * 100% / 12);
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: calc(12 * 100% / 12);
 }
 
 .col-md-3 {
@@ -16,45 +73,53 @@
 }
 
 .col1-md-3 {
-    width: calc(3 * 100% / 12);
-    flex: 30%;
-    padding-left: 50px;
+    max-width: calc(3 * 100% / 12);
+    flex: 0 0 30%;
+    /* padding-left: 50px; */
 }
 
-.col-4 {
+.col-lg-4 {
+    flex: 0 0 33.333333%;
     width: calc(4 * 100% / 12);
 }
 
-.col-5 {
-    width: calc(5 * 100% / 12);
+.col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-.col-6 {
-    width: calc(6 * 100% / 12);
+.col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
 }
 
-.col-7 {
-    width: calc(7 * 100% / 12);
+.col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-.col-8 {
-    width: calc(8 * 100% / 12);
+.col-3,
+.col-4,
+.col-6,
+.col-9,
+.col,
+.col-auto,
+.col-sm-6,
+.col-md-4,
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-9,
+.col-xl-3,
+.col1-md-3 {
+    position: relative;
+    width: 100%;
 }
 
-.col-9 {
-    width: calc(9 * 100% / 12);
-}
-
-.col-10 {
-    width: calc(10 * 100% / 12);
-}
-
-.col-11 {
-    width: calc(11 * 100% / 12);
-}
-
-.col-12 {
-    width: calc(12 * 100% / 12);
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
 }
 
 .img-fluid {
@@ -88,12 +153,14 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rowprod {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
+    margin: 1px;
+    justify-content: center;
 }
 
 .float-left {
@@ -102,6 +169,7 @@
 
 .float-right {
     float: right;
+    padding-inline-end: 0px;
 }
 
 body {
@@ -118,72 +186,32 @@ body {
     min-width: 992px;
 }
 
-.col-3,
-.col-4,
-.col-6,
-.col-9,
-.col,
-.col-auto,
-.col-sm-6,
-.col-md-4,
-.col-lg-3,
-.col-lg-4,
-.col-lg-6,
-.col-lg-9,
-.col-xl-3,
-.col1-md-3 {
-    position: relative;
-    width: 100%;
-}
 
-.col {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-}
-
-.col-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-}
-
-.col-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-
-.col-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
-
-.col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-}
-
-@media (min-width: 576px) {
+/* @media (min-width: 500px) and (max-width: 767px) {
     .col-sm-6 {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .navcontainer label {
+        display: inline-block;
+    }
+    .navcontainer>ul {
+        display: none;
+    }
+    input[type="checkbox"]:checked~label+ul {
+        display: block;
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .col-md-4 {
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
     }
 }
 
-@media (min-width: 992px) {
-    .col-lg-3 {
+@media (min-width: 992px) and (max-width: 1200px) {
+    .col-xl-5 {
         flex: 0 0 25%;
         max-width: 25%;
     }
@@ -211,24 +239,10 @@ body {
     .container {
         max-width: 1280px;
     }
-}
+} */
 
-.col-lg-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-}
 
-.col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.col-lg-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-}
-
-.pt-5,
+/* .pt-5,
 .py-5 {
     padding-top: 0.1rem !important;
     background-color: rgb(243, 165, 76);
@@ -240,4 +254,4 @@ body {
 
 .pb-3 {
     padding-bottom: 1rem !important;
-}
+} */

@@ -28,7 +28,10 @@
                     <span class="font-weight-bold text-uppercase">Happy wheels</span></a>
                 <!-- <img src="images/bike-logo.png" class="logo float-right"> -->
                 <img class="logo float-right move-right move-left" src="https://www.gifki.org/data/media/237/velosiped-animatsionnaya-kartinka-0098.gif" alt="velosiped-animatsionnaya-kartinka-0098" /></a>
+
                 <div class="navcontainer linkscont">
+                    <!-- <input type="checkbox" name="menu" id="btn-menu" />
+                    <label for="btn-menu">btn menu</label> -->
 
                     <ul class="navbar-nav mr-auto float-left effect-brackets links-container">
 
@@ -40,11 +43,26 @@
                         <li class="nav-item"><a href="login.html" class="nav-link"><i
                                         class="fas fa-sign-in-alt"></i>Login</a></li>
                     </ul>
-                    <button class="nav-toggle">
-                                <i class="fas fa-bars"></i>
-                            </button>
+                    <ul navbar-nav>
+                        <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+                        <div hidden>
+                            <li class="nav-item"><a href="index.html" class="nav-link"><i
+                                class="fa-home"></i>Home</a></li>
+                            <li class="nav-item"><a href="aboutUs.html" class="nav-link"><i
+                                class="fa-book-open"></i>About</a></li>
+                            <li class="nav-item"><a href="catalog.html" class="nav-link"><i
+                                class="fa-blog"></i>Catalog</a></li>
+                            <li class="nav-item"><a href="SignUp.html" class="nav-link"><i
+                                class="fa-address-card"></i>Sign up</a></li>
+                            <li class="nav-item "><a class="nav-link cart-toggle"><i
+                            class="fas fa-cart-plus"></i>
+                        <li class="nav-item"><a href="login.html" class="nav-link"><i
+                                class="fas fa-sign-in-alt"></i>Login</a></li>
+                        </div>
+                    </ul>
 
                 </div>
+
             </nav>
         </div>
     </header>
@@ -158,9 +176,11 @@
         </div>
     </div>
     <section class="backgr">
-        <header class="recommendation">
-            <h2>Our Catalog</h2>
-        </header>
+        <div>
+            <header class="recommendation">
+                <h2>Our Catalog</h2>
+            </header>
+        </div>
         <div class="showcase rowprod">
 
 
@@ -195,7 +215,8 @@
                     <li><a class="footer-link ourBikes" href="catalog.html">Our bikes</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
+            <div class="clear-fix"></div>
+            <div class="col-md-12">
                 <p class="small">&copy; 2020 All rights reserved.</p>
             </div>
         </div>

@@ -158,7 +158,7 @@ class App {
     }
     createProductMarkUp(data) {
         return `
-            <div  class="col-4 col-md-3 col-xl-3 col-lg-4  ">
+            <div  class="  col-md-3 col-xl-5  col-sm-6 ">
                <div class="newproduct text-center" data-id="${data.id}">
                   <div class="position-relative mb-3">
                     <a href="detail.html" class="d-block">
@@ -271,17 +271,21 @@ class App {
                 this.setCartTotal(this.cart);
                 Storage.saveCart(this.cart);
                 tempItem.amount = tempItem.amount + 1;
+                // tempItem.price = tempItem.price + 1;
 
                 event.target.previousElementSibling.innerHTML = tempItem.amount;
+                // event.target.nextElementSibling.innerHTML = tempItem.price;
                 // this.setItemTotal(this.cart);
                 this.setCartTotal(this.cart);
                 Storage.saveCart(this.cart);
             } else if (event.target.classList.contains('fa-caret-left')) {
                 let tempItem = this.findItem(this.cart, event.target);
                 tempItem.amount = tempItem.amount - 1;
+                // tempItem.price = tempItem.price - 1;
                 if (tempItem.amount > 0) {
 
                     event.target.nextElementSibling.innerHTML = tempItem.amount;
+                    // event.target.previousElementSibling.innerHTML = tempItem.price;
                 } else {
                     this.cart = this.filterItem(this.cart, event.target);
                     this.cartItems.removeChild(event.target.parentElement.parentElement.parentElement);

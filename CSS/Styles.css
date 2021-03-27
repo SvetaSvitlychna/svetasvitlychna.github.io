@@ -12,6 +12,8 @@ body {
 .header {
     background-color: rgb(243, 165, 76);
     display: inline-flexbox;
+    /* float: left;
+        width: 50%; */
 }
 
 .row {
@@ -110,4 +112,63 @@ body {
 .product-name {
     margin: 10px;
     padding: 1px;
+}
+
+.leftimage {
+    width: 15%;
+    float: left;
+    margin: 7px 7px 7px 0;
+}
+
+.rightimage {
+    width: 15%;
+    float: right;
+    margin: 7px 7px 7px 0;
+}
+
+.text {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-bottom: -20px; */
+    padding: 10px;
+}
+
+.inform {
+    margin: 10px;
+}
+
+.clear-fix {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+input[type="checkbox"] {
+    display: none;
+    justify-content: right;
+}
+
+.navcontainer label {
+    display: none;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-content: right;
+}
+
+.navcontainer label:hover {
+    color: #f00;
+    border: 1px solid #f00;
+}
+
+.navcontainer li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+html {
+    overflow-x: hidden;
 }
