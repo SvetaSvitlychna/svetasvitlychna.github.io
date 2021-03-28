@@ -42,9 +42,9 @@
     .newproduct {
         float: left;
         border: 1px solid orangered;
-        width: 50%;
-        height: 85%;
-        margin: 27px 100px 30px 100px;
+        /* width: 50%; */
+        /* height: 85%; */
+        margin: 10px 10px 0px 10px;
     }
     
     .newproduct img {

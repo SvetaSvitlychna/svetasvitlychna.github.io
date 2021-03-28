@@ -35,7 +35,7 @@
 .logo {
     display: inline-flex;
     max-height: 5em;
-    animation: move 10s infinite alternate linear;
+    animation: move 25s infinite alternate linear;
 }
 
 .logo:after {
@@ -126,6 +126,7 @@
 }
 
 @media (min-width: 300px) and (max-width: 499px) {
+    .col-sm-6 {}
     @keyframes move {
         0% {
             transform: translate3d(100px, 0, 0);
@@ -148,6 +149,7 @@
 }
 
 @media (min-width: 700px) and (max-width: 959px) {
+    .col-md-3 {}
     @keyframes move {
         0% {
             transform: translate3d(-25px, 0, 0);
@@ -170,6 +172,7 @@
 }
 
 @media (min-width: 1025px) {
+    .col-xl-5 {}
     @keyframes move {
         0% {
             transform: translate3d(-450px, 0, 0);

@@ -158,7 +158,7 @@ class App {
     }
     createProductMarkUp(data) {
         return `
-            <div  class="  col-md-3 col-xl-5  col-sm-6 ">
+            <div  class="col-md-3 col-4 ">
                <div class="newproduct text-center" data-id="${data.id}">
                   <div class="position-relative mb-3">
                     <a href="detail.html" class="d-block">
